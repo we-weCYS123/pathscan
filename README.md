@@ -1,35 +1,4 @@
-Viewed README.md:1-60
 
-ممتاز جداً! الرفع عبر سحب الملفات من المتصفح حل ذكي وسريع ومباشر.
-
-إليك كل ما تحتاجه لملء صفحة مشروعك على GitHub لتبدو بمستوى احترافي عالمي يبهر أي باحث أمني أو مسؤول توظيف:
-
----
-
-### 1️⃣ الوصف المختصر للمستودع (GitHub About Box)
-في الواجهة الرئيسية للمستودع على موقع GitHub، اضغط على أيقونة **⚙️ (Settings/Edit)** بجانب كلمة **About** في الشريط الجانبي الأيمن:
-
-* **Description (الوصف):**
-```text
-High-performance, multi-threaded Path Traversal & LFI security assessment tool with baseline differential analysis, zero false-positives, and interactive HTML reporting. (For Educational & Authorized Auditing Only)
-```
-
-* **Topics / Tags (الوسوم):**
-```text
-python, cybersecurity, path-traversal, lfi, security-tools, penetration-testing, owasp, cwe-22, vulnerability-scanner, information-security
-```
-
----
-
-### 2️⃣ كيف تضيف الـ README عبر المتصفح بـ 3 نقرات:
-1. داخل صفحة مستودعك على GitHub، اضغط على زر **Add file** ثم اختر **Create new file**.
-2. في خانة اسم الملف اكتب: `README.md`
-3. في مربع النص الكبير، **انسخ المحتوى الكامل الموجود في المربع أدناه والصقه مباشرة**.
-4. انزل لأسفل الصفحة واضغط على الزر الأخضر **Commit changes...** ثم اضغط **Commit changes**.
-
----
-
-### 3️⃣ النص الكامل لملف `README.md` (جاهز للنسخ مباشرة):
 
 ```markdown
 <div align="center">
