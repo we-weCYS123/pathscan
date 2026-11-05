@@ -1,0 +1,69 @@
+# ═══════════════════════════════════════════════════════
+#  PathScan Configuration
+# ═══════════════════════════════════════════════════════
+
+target:
+  seed_url: "http://target.com/"        # Target URL
+  scope:
+    - "target.com"                       # Allowed target scope
+  exclude_patterns:                      # Paths to skip during crawling
+    - "logout"
+    - "signout"
+    - "delete"
+    - "unsubscribe"
+    - "mailto:"
+    - "javascript:"
+  max_depth: 3
+  max_pages: 500
+
+session:
+  cookies: {}                            # Example: PHPSESSID: "abc123"
+  headers:
+    User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 PathScan/3.0"
+  proxy: {}                              # Example: http: "http://127.0.0.1:8080"
+
+ssl:
+  verify: false                          # false for testing/self-signed, true for production
+  ca_bundle: null
+
+crawler:
+  threads: 10
+  timeout: 10
+  delay: 0.1
+  respect_robots: true
+  parse_javascript: true
+  max_content_size: 2097152
+
+scanner:
+  threads: 5
+  timeout: 15
+  delay: 0.2
+  compare_threshold: 200                 # Length difference in bytes
+  test_post: true                        # Test POST forms
+  post_limit_per_form: 50
+  payload_limit: 150                     # Payload limit per parameter
+
+waf:
+  enabled: true
+  block_codes: [403, 406, 429, 503]
+  backoff_seconds: 10
+  max_retries: 3
+  signatures:
+    - "cloudflare"
+    - "access denied"
+    - "sucuri"
+    - "akamai"
+    - "imperva"
+    - "incapsula"
+    - "request blocked"
+    - "web application firewall"
+    - "just a moment"
+
+output:
+  directory: "output"
+  json: true
+  text: true
+
+logging:
+  level: "INFO"                          # DEBUG for more verbose output
+

